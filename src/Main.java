@@ -38,9 +38,11 @@ public class Main
             }
         }
 
-        for(int j=0; j<aArr.length;j++)
+        arr = StringUtil.toIntArray(aArr);
+
+        for(int j=0; j<arr.length;j++)
         {
-            System.out.print(aArr[j]+(j<aArr.length-1?",":""));
+            System.out.print(arr[j]+(j<arr.length-1?",":""));
         }
     }
 
