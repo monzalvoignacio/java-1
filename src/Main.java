@@ -38,11 +38,11 @@ public class Main
             }
         }
 
-        arr = StringUtil.toIntArray(aArr);
+        int[] iArr = StringUtil.toIntArray(aArr);
 
         for(int j=0; j<arr.length;j++)
         {
-            System.out.print(arr[j]+(j<arr.length-1?",":""));
+            arr[j] = iArr[j];
         }
     }
 
@@ -53,7 +53,7 @@ public class Main
 
         for(int i=0; i<arr.length;i++)
         {
-//            System.out.print(arr[i]+(i<arr.length-1?",":""));
+            System.out.print(arr[i]+(i<arr.length-1?",":""));
         }
     }
 }
